@@ -1,5 +1,9 @@
 body{
     font-family: Signika, sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     .presentation{
         background: linear-gradient(180deg, #AAADB2 0%, #C8C9CB 100%);
         display: flex;
@@ -9,11 +13,15 @@ body{
         max-width: 1296px;
         margin-top: 40px;
         gap: 139px;
+        margin-bottom: 120px;
+        .presentation-img{
+            margin-right: 100px;
+        }
         .presentation-text{
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-
+            margin-left: 100px;
             .presentation-h1{
                 font-size: 32px;
                 font-weight: 400;
@@ -45,6 +53,122 @@ body{
                 padding: 17px 30px;
                 margin-top: 45px;
                 cursor: pointer;
+            }
+        }
+    }
+    .all-brands{
+        display: flex;
+        flex-direction: row;
+        gap: 130px;
+        margin-bottom: 150px;
+        .all-brands-text{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 25px;
+            .all-brands-h2{
+                font-size: 24px;
+                color: #333;
+                margin-top: 0;
+            }
+            .all-brands-img{
+                cursor: pointer;
+            }
+        }
+        .brands{
+            display: grid;
+            grid-template-columns:  306px  306px  306px;
+            row-gap: 24px;
+            column-gap: 24px;
+        }
+    }
+    .cards-section{
+        margin-bottom: 114px;
+        .cards{
+            display: grid;
+            grid-template-columns: 306px 306px 306px 306px;
+            row-gap: 24px;
+            column-gap: 24px;
+            .card:nth-child(1){
+                background: #F98C23;
+            }
+            .card:nth-child(2){
+                background: #AE8EB5;
+                .card-ul{
+                    margin-top: -30px;
+                }
+            }
+            .card:nth-child(3){
+                background: #E74F4E;
+                .card-ul{
+                    margin-top: -150px;
+                }
+            }
+            .card:nth-child(4){
+                background: #91B450;
+                .card-ul{
+                    margin-top: -40px;
+                }
+            }
+            .card:nth-child(5){
+                background: #EFB434;
+                .card-h2{
+                    margin-bottom: -20px;
+                }
+            }
+            .card:nth-child(6){
+                background: #0090B5;
+                .card-ul{
+                    margin-top: -20px;
+                }
+            }
+            .card:nth-child(7){
+                background: #8467CA;
+                .card-ul{
+                    margin-top: -5px;
+                }
+            }
+            .card:nth-child(8){
+                background: #C39440;
+            }
+            .card{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                border-radius: 10px;
+                justify-content: space-between;
+                padding: 35px;
+                align-self: stretch;
+                .card-h2{
+                    font-size: 21px;
+                    margin-bottom: 0;
+                    color: #fff;
+                    margin-top: 0;
+                }
+                .card-ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    list-style-image: url(../imgs/icon-list-cards.png);
+                    margin-left: -25px;
+                    .card-list{
+                        font-size: 14px;
+                        color: #fff;
+                        font-weight: 400;
+                    }
+                }
+                .card-btn{
+                    background: #0063B0;
+                    border-radius: 10px;
+                    padding: 13px 27px;
+                    align-items: center;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
             }
         }
     }

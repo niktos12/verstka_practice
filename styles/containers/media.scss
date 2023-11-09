@@ -1,0 +1,53 @@
+@import 'variables.scss';
+
+
+@mixin desktop(){
+    @media (max-width:$breakpoint_desktop){
+        @content
+    }
+};
+@mixin defaultLaptop(){
+    @media (max-width: $breakpoint_laptop){
+        @content
+    }
+};
+@mixin smallLaptop(){
+    @media (max-width:$breakpoint_small_laptop){
+        @content
+    }
+};
+@mixin horizontalTable(){
+    @media (max-width: $breakpoint_tabletHorizontal){
+        @content
+    }
+};
+@mixin verticalTable(){
+    @media (max-width: $breakpoint_tabletVertical){
+        @content
+    }
+};
+@mixin adaptiveNavIcon(){
+    @media (max-width: $breakpoint_for_icon_nav){
+        @content;
+    }
+}
+@mixin smallVerticalTable(){
+    @media (max-width: $breakpoint_small_tabletVertical){
+        @content
+    }
+};
+@mixin defaultMobile(){
+    @media (max-width: $breakpoint_mobile){
+        @content
+    }
+};
+@mixin smallMobile(){
+    @media (max-width: $breakpoint_small_mobile){
+        @content
+    }
+};
+@mixin megaSmallMobile(){
+    @media (max-width: $breakpoint_small_mega_mobile){
+        @content
+    }
+};

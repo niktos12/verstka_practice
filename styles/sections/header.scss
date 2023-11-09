@@ -1,0 +1,89 @@
+
+header{
+    .header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 593px;
+        margin-bottom: 24px;
+        .a-navs{
+            display: flex;
+            gap: 24px;
+            .a-nav{
+                text-decoration: none;
+                color: #333;
+            }
+        }
+        .contact-info-nav{
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            .phone-nav{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+            .email-nav{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+        }
+    }
+    .logo-search{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 101px;
+        .catalogs{
+            padding: 13px 30px;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 10px;
+            background: #0063B0;
+            color: #fff;
+            border: none;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .search{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            .search-input{
+                display: flex;
+                width: 596px;
+                padding: 12px 20px;
+                border-radius: 10px;    
+                border: 1px solid rgba(51, 51, 51, 0.30);
+            }
+            .icon-search{
+                margin-left: -40px;
+                cursor: pointer;
+            }
+        }
+        .likes-cart{
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+            .like{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                .likes{
+                    cursor: pointer;
+                }
+            }
+            .cart{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                .carts{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

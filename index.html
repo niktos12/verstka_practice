@@ -6,8 +6,8 @@
     <title>Аксимум</title>
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Marcellus&family=Montserrat&family=Roboto:wght@400;700&family=Signika&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Marcellus&family=Montserrat&family=Roboto:wght@400;700&family=Signika&display=swap" rel="stylesheet">
 </head>
 <body class="container">
     <header class="container">
@@ -78,7 +78,7 @@
     </section>
     <section class="cards-section">
         <div class="cards">
-            <div class="card">
+            <div class="card" id="card-1">
                 <h2 class="card-h2">Имплантология</h2>
                 <ul class="card-ul">
                     <li class="card-list">Набор для фиксации костных блоков</li>
@@ -91,7 +91,7 @@
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
             </div>
-            <div class="card">
+            <div class="card" id="card-2">
                 <h2 class="card-h2">Хирургия</h2>
                 <ul class="card-ul">
                     <li class="card-list">Элеваторы и люксаторы</li>
@@ -104,7 +104,7 @@
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
             </div>
-            <div class="card">
+            <div class="card" id="card-3">
                 <h2 class="card-h2">Пародонтология</h2>
                 <ul class="card-ul">
                     <li class="card-list">Кюреты Грейси</li>
@@ -113,7 +113,7 @@
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
             </div>
-            <div class="card">
+            <div class="card" id="card-4">
                 <h2 class="card-h2">Ортопедия</h2>
                 <ul class="card-ul">
                     <li class="card-list">Набор для снятия коронок</li>
@@ -125,7 +125,7 @@
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
             </div>
-            <div class="card">
+            <div class="card" id="card-5">
                 <h2 class="card-h2">Терапия и диагностика</h2>
                 <ul class="card-ul">
                     <li class="card-list">Зеркала, микрозеркала и рукоятки</li>
@@ -136,7 +136,7 @@
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
             </div>
-            <div class="card">
+            <div class="card" id="card-6">
                 <h2 class="card-h2">Ортодонтия</h2>
                 <ul class="card-ul">
                     <li class="card-list">Набор для фиксации костных блоков</li>
@@ -148,7 +148,7 @@
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
             </div>
-            <div class="card">
+            <div class="card" id="card-7">
                 <h2 class="card-h2">Расходные материалы</h2>
                 <ul class="card-ul">
                     <li class="card-list">Аспираторы, адаптеры</li>
@@ -160,11 +160,151 @@
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
             </div>
-            <div class="card">
+            <div class="card" id="card-8">
                 <h2 class="card-h2">Весь каталог</h2>
                 <button class="card-btn">Посмотреть все</button>
             </div>
         </div>
     </section>
+    <section class="popular-goods">
+        <div class="popular-goods-text">
+            <h2 class="popular-goods-h2">Популярные товары</h2>
+            <img src="./imgs/icon-more.png" class="popular-goods-img">
+        </div>
+        <div class="popular-goods-cards">
+            <div class="popular-goods-card">
+                <img src="./imgs/product-card__img.png" class="popular-goods-card-img">
+                <div class="line"></div>
+                <p class="popular-goods-card-text">Иглодержатель Криля-Вуда</p>
+                <p class="price">3 600 ₽</p>
+                <button class="add-in-cart">В корзину</button>
+            </div>
+            <div class="popular-goods-card">
+                <img src="./imgs/product-card__img.png" class="popular-goods-card-img">
+                <div class="line"></div>
+                <p class="popular-goods-card-text">Иглодержатель Криля-Вуда</p>
+                <p class="price">3 600 ₽</p>
+                <button class="add-in-cart">В корзину</button>
+            </div>
+            <div class="popular-goods-card">
+                <img src="./imgs/product-card__img.png" class="popular-goods-card-img">
+                <div class="line"></div>
+                <p class="popular-goods-card-text">Иглодержатель Криля-Вуда</p>
+                <p class="price">3 600 ₽</p>
+                <button class="add-in-cart">В корзину</button>
+            </div>
+            <div class="popular-goods-card">
+                <img src="./imgs/product-card__img.png" class="popular-goods-card-img">
+                <div class="line"></div>
+                <p class="popular-goods-card-text">Иглодержатель Криля-Вуда</p>
+                <p class="price">3 600 ₽</p>
+                <button class="add-in-cart">В корзину</button>
+            </div>
+        </div>
+    </section>
+    <section class="description">
+        <div class="description-text">
+            <p class="text-p">Компания "Медтех" - это лидер в области производства и продажи медицинского оборудования. Мы работаем на рынке более 10 лет и предлагаем широкий ассортимент продукции высокого качества.</p>
+            <p class="text-p">Наша компания специализируется на медицинском оборудовании для различных областей медицины, таких как хирургия, реабилитация, диагностика и терапия. В нашем каталоге товаров представлены инновационные решения для различных сфер медицинской деятельности.</p>
+            <p class="text-p">Мы работаем только с проверенными и надежными производителями, которые гарантируют качество своей продукции. Кроме того, мы контролируем каждый этап производства и поставки оборудования, чтобы нашим клиентам было предоставлено только лучшее.</p>
+            <p class="text-p">Компания "Медтех" заботится о своих клиентах, поэтому мы предлагаем не только качественное оборудование, но и квалифицированную консультацию и помощь в выборе необходимой продукции.</p>
+        </div>
+        <div class="download-catalog">
+            <img class="download-catalog-img" src="./imgs/about__catalog-image.png">
+            <button class="btn-download">Скачать каталог (pdf)</button>
+        </div>
+    </section>
+    <section class="new-items">
+        <div class="new-items-text">
+            <h2 class="new-items-h2">Новинки</h2>
+            <img src="./imgs/icon-more.png" class="new-items-img">
+        </div>
+        <div class="new-items-cards">
+            <div class="new-items-card">
+                <img src="./imgs/product-card__img.png" class="new-items-card-img">
+                <div class="line-new"></div>
+                <p class="new-items-card-text">Иглодержатель Криля-Вуда</p>
+                <p class="price-new">3 600 ₽</p>
+                <button class="add-in-cart-new">В корзину</button>
+            </div>
+            <div class="new-items-card">
+                <img src="./imgs/product-card__img.png" class="new-items-card-img">
+                <div class="line-new"></div>
+                <p class="new-items-card-text">Иглодержатель Криля-Вуда</p>
+                <p class="price-new">3 600 ₽</p>
+                <button class="add-in-cart-new">В корзину</button>
+            </div>
+            <div class="new-items-card">
+                <img src="./imgs/product-card__img.png" class="new-items-card-img">
+                <div class="line-new"></div>
+                <p class="new-items-card-text">Иглодержатель Криля-Вуда</p>
+                <p class="price-new">3 600 ₽</p>
+                <button class="add-in-cart-new">В корзину</button>
+            </div>
+            <div class="new-items-card">
+                <img src="./imgs/product-card__img.png" class="new-items-card-img">
+                <div class="line-new"></div>
+                <p class="new-items-card-text">Иглодержатель Криля-Вуда</p>
+                <p class="price-new">3 600 ₽</p>
+                <button class="add-in-cart-new">В корзину</button>
+            </div>
+        </div>
+    </section>
+    <div class="line-footer"></div>
+    <footer>
+        <div class="footer">
+            <div class="logo-footer">
+                <img class="logo-in-footer" src="./imgs/footer__logo.png">
+            </div>
+            <div class="footer-nav">
+                <h3 class="footer-h3">О компании</h3>
+                <div class="footer-list">
+                    <a class="footer-list-a" href="#">О компании</a>
+                    <a class="footer-list-a" href="#">Новости</a>
+                    <a class="footer-list-a" href="#">Контакты</a>
+                    <a class="footer-list-a" href="#">Статьи</a>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <h3 class="footer-h3">Популярные категории</h3>
+                <div class="footer-list">
+                    <a class="footer-list-a" href="#card-1">Имплантология</a>
+                    <a class="footer-list-a" href="#card-2">Хирургия</a>
+                    <a class="footer-list-a" href="#card-3">Пародонтология</a>
+                    <a class="footer-list-a" href="#card-4">Ортопедия</a>
+                    <a class="footer-list-a" href="#card-5">Терапия и диагностика</a>
+                    <a class="footer-list-a" href="#card-6">Ортодонтия</a>
+                    <a class="footer-list-a" href="#card-7">Расходные материалы</a>
+                    <a class="footer-list-a" href="#">Оборудование</a>
+                </div>
+            </div>
+            <div class="footer-contacts">
+                <h3 class="footer-h3">Контакты</h3>
+                <div class="footer-contacts-list">
+                    <div class="address">
+                        <img class="address-icon" src="./imgs/address-icon.png">
+                        <p class="address-p">г. Москва, ул. Усачева, д. 62, стр. 1 офис 1</p>
+                    </div>
+                    <div class="phone">
+                        <img class="phone-icon" src="./imgs/Group.png">
+                        <p class="phone-p">+7 (495) 933-6147</p>
+                    </div>
+                    <div class="phone">
+                        <img class="phone-icon" src="./imgs/Group.png">
+                        <p class="phone-p">+7 (495) 933-6147</p>
+                    </div>
+                    <div class="email">
+                        <img class="email-icon" src="./imgs/service-icon.png">
+                        <p class="email-p">max@maximum.su</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line-footer-after"></div>
+        <div class="copyright">
+            <p class="copyright-p">2023 (с) Все права защищены</p>
+            <p class="copyright-p">Политика конфиденциальности</p>
+        </div>
+    </footer>
 </body>
 </html>

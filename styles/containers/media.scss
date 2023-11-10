@@ -1,6 +1,25 @@
 @import 'variables.scss';
 
-
+@mixin cards(){
+    @media (max-width:$breakpoint_for_cards){
+        @content
+    }
+};
+@mixin microLaptop(){
+    @media(max-width: $breakpoint_micro_laptop){
+        @content
+    }
+};
+@mixin headerAdaptive(){
+    @media (max-width:$breakpoint_for_header){
+        @content
+    }
+};
+@mixin footerAdaptive(){
+    @media (max-width: $breakpoint_for_footer){
+        @content
+    }
+};
 @mixin desktop(){
     @media (max-width:$breakpoint_desktop){
         @content

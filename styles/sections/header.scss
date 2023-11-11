@@ -19,6 +19,9 @@ header{
         .a-navs{
             display: flex;
             gap: 24px;
+            @include headerAdaptive{
+                display: none;
+            }
             .a-nav{
                 text-decoration: none;
                 color: #333;
@@ -28,6 +31,10 @@ header{
             display: flex;
             flex-direction: row;
             gap: 32px;
+            align-items: center;
+            @include finalHeader{
+                gap: 16px;
+            }
             .phone-nav{
                 display: flex;
                 align-items: center;
@@ -37,6 +44,19 @@ header{
                 display: flex;
                 align-items: center;
                 gap: 16px;
+            }
+            .menu{
+                display: none;
+                width: 30px; 
+                height: 30px;
+                
+                @include headerAdaptive{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+
+                }
             }
         }
     }
@@ -48,6 +68,16 @@ header{
         @include microLaptop{
             gap: 50px;
             justify-content: center;
+        }
+        @include headerAdaptive{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            column-gap: 25px;
+            row-gap: 25px;
+        }
+        @include final{
+            grid-template-columns: 1fr;
         }
         .catalogs:hover{
             background: #333;
@@ -76,6 +106,9 @@ header{
                 border: 1px solid rgba(51, 51, 51, 0.30);
                 @include cards{
                     width: 211px;
+                }
+                @include final{
+                    max-width: 211px;
                 }
             }
             .icon-search{

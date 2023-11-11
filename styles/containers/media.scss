@@ -15,6 +15,21 @@
         @content
     }
 };
+@mixin adaptiveCards(){
+    @media (max-width: $breakpoint_for_adaptive_cards){
+        @content
+    }
+};
+@mixin final(){
+    @media(max-width: $breakpoint_for_final){
+        @content
+    }
+};
+@mixin presentation(){
+    @media (max-width: $breakpoint_for_presentation){
+        @content
+    }
+};
 @mixin footerAdaptive(){
     @media (max-width: $breakpoint_for_footer){
         @content
@@ -32,6 +47,11 @@
 };
 @mixin smallLaptop(){
     @media (max-width:$breakpoint_small_laptop){
+        @content
+    }
+};
+@mixin finalHeader(){
+    @media (max-width:$breakpoint_for_final_header){
         @content
     }
 };

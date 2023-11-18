@@ -164,6 +164,7 @@ body{
             @include adaptiveCards{
                 grid-template-columns: 306px;
             }
+            
             .card:nth-child(1){
                 background: #F98C23;
             }
@@ -230,51 +231,60 @@ body{
                     display: none;
                 }
             }
-            .card{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 20px;
-                border-radius: 10px;
-                justify-content: space-between;
-                padding: 35px;
-                align-self: stretch;
-                .card-h2{
-                    font-size: 21px;
-                    margin-bottom: 0;
-                    color: #fff;
-                    margin-top: 0;
-                }
-                .card-ul{
+            
+
+                .card{
                     display: flex;
                     flex-direction: column;
-                    gap: 15px;
-                    list-style-image: url(../imgs/icon-list-cards.png);
-                    margin-left: -25px;
-                    .card-list{
-                        font-size: 14px;
-                        color: #fff;
-                        font-weight: 400;
-                    }
-                }
-                .card-btn:hover{
-                    background: #333;
-                    color: #fff;
-                }
-                .card-btn{
-                    background: #0063B0;
+                    align-items: flex-start;
+                    gap: 20px;
                     border-radius: 10px;
-                    padding: 13px 27px;
-                    align-items: center;
-                    color: #fff;
-                    border: none;
-                    cursor: pointer;
-                    font-size: 14px;
-                    font-weight: 400;
-                    transition: 1s ease;
+                    justify-content: space-between;
+                    padding: 35px;
+                    align-self: stretch;
+                    
+                        .card-h2{
+                        font-size: 21px;
+                        margin-bottom: 0;
+                        color: #fff;
+                        margin-top: 0;
+                    }
+                    .card-ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        list-style-image: url(../imgs/icon-list-cards.png);
+                        margin-left: -25px;
+                        .card-list{
+                            font-size: 14px;
+                            color: #fff;
+                            font-weight: 400;
+                        }
+                    }
+                    .card-btn:hover{
+                        background: #333;
+                        color: #fff;
+                    }
+                    .card-btn{
+                        background: #0063B0;
+                        border-radius: 10px;
+                        padding: 13px 27px;
+                        align-items: center;
+                        color: #fff;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 14px;
+                        font-weight: 400;
+                        transition: 1s ease;
+                    }
+                    // .back{
+                    //     display: none;
+                    // }
+                    
+                    
                 }
             }
-        }
+        
         .all-cards-btn:hover{
             background: #333;
         }

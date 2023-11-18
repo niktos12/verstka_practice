@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Marcellus&family=Montserrat&family=Roboto:wght@400;700&family=Signika&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./jquery.flip.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="./scripts/app.js"></script>
 </head>
 <body class="container">
     <header class="container">
@@ -81,8 +86,9 @@
     </section>
     <section class="cards-section">
         <div class="cards">
-            <div class="card" id="card-1">
-                <h2 class="card-h2">Имплантология</h2>
+            <div class="card" id="card">
+                <div class="front">
+                    <h2 class="card-h2">Имплантология</h2>
                 <ul class="card-ul">
                     <li class="card-list">Набор для фиксации костных блоков</li>
                     <li class="card-list">Биоматериалы</li>
@@ -93,9 +99,18 @@
                     <li class="card-list">Чашки для костного материала</li>
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
+                </div>
+                    
+                <div class="back">
+                    <p class="description-back">
+                        <p class="description-back-p">Имплантология - это область медицины, которая занимается установкой и сохранением имплантов в человеческом организме.</p>
+                        <button class="back-btn">Вернуться</button>
+                    </p>
+                </div>
             </div>
-            <div class="card" id="card-2">
-                <h2 class="card-h2">Хирургия</h2>
+            <div class="card" id="card">
+                <div class="front">
+                    <h2 class="card-h2">Хирургия</h2>
                 <ul class="card-ul">
                     <li class="card-list">Элеваторы и люксаторы</li>
                     <li class="card-list">Периотомы</li>
@@ -106,18 +121,20 @@
                     <li class="card-list">Лезвия и рукоятки для лезвий</li>
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
+                </div>
             </div>
-            <div class="card" id="card-3">
-                <h2 class="card-h2">Пародонтология</h2>
+            <div class="card" id="card">
+                    <h2 class="card-h2">Пародонтология</h2>
                 <ul class="card-ul">
                     <li class="card-list">Кюреты Грейси</li>
                     <li class="card-list">Скалеры</li>
                     <li class="card-list">Зонды пародонтологические</li>
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
+                
             </div>
-            <div class="card" id="card-4">
-                <h2 class="card-h2">Ортопедия</h2>
+            <div class="card" id="card">
+                    <h2 class="card-h2">Ортопедия</h2>
                 <ul class="card-ul">
                     <li class="card-list">Набор для снятия коронок</li>
                     <li class="card-list">Коронкосниматели</li>
@@ -127,9 +144,10 @@
                     <li class="card-list">Контрастеры</li>
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
+                
             </div>
-            <div class="card" id="card-5">
-                <h2 class="card-h2">Терапия и диагностика</h2>
+            <div class="card" id="card">
+                    <h2 class="card-h2">Терапия и диагностика</h2>
                 <ul class="card-ul">
                     <li class="card-list">Зеркала, микрозеркала и рукоятки</li>
                     <li class="card-list">Щипцы для извлечения сломанных инструментов из каналов</li>
@@ -138,9 +156,10 @@
                     <li class="card-list">Пинцеты</li>
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
+                
             </div>
-            <div class="card" id="card-6">
-                <h2 class="card-h2">Ортодонтия</h2>
+            <div class="card" id="card">
+                    <h2 class="card-h2">Ортодонтия</h2>
                 <ul class="card-ul">
                     <li class="card-list">Набор для фиксации костных блоков</li>
                     <li class="card-list">Биоматериалы</li>
@@ -150,9 +169,11 @@
                     <li class="card-list">Чашки для костного материала</li>
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
+                
             </div>
-            <div class="card" id="card-7">
-                <h2 class="card-h2">Расходные материалы</h2>
+            <div class="card" id="card">
+                
+                    <h2 class="card-h2">Расходные материалы</h2>
                 <ul class="card-ul">
                     <li class="card-list">Аспираторы, адаптеры</li>
                     <li class="card-list">Ирригационные системы</li>
@@ -162,8 +183,10 @@
                     <li class="card-list">Лезвия для скальпелей</li>
                 </ul>
                 <button class="card-btn">Посмотреть все</button>
+                
+                
             </div>
-            <div class="card" id="card-8">
+            <div class="card" id="card">
                 <h2 class="card-h2">Весь каталог</h2>
                 <button class="card-btn">Посмотреть все</button>
             </div>
@@ -275,14 +298,14 @@
             <div class="footer-nav">
                 <h3 class="footer-h3">Популярные категории</h3>
                 <div class="footer-list">
-                    <a class="footer-list-a" href="#card-1">Имплантология</a>
-                    <a class="footer-list-a" href="#card-2">Хирургия</a>
-                    <a class="footer-list-a" href="#card-3">Пародонтология</a>
-                    <a class="footer-list-a" href="#card-4">Ортопедия</a>
-                    <a class="footer-list-a" href="#card-5">Терапия и диагностика</a>
-                    <a class="footer-list-a" href="#card-6">Ортодонтия</a>
-                    <a class="footer-list-a" href="#card-7">Расходные материалы</a>
-                    <a class="footer-list-a" href="#">Оборудование</a>
+                    <a class="footer-list-a" href="#card">Имплантология</a>
+                    <a class="footer-list-a" href="#card">Хирургия</a>
+                    <a class="footer-list-a" href="#card">Пародонтология</a>
+                    <a class="footer-list-a" href="#card">Ортопедия</a>
+                    <a class="footer-list-a" href="#card">Терапия и диагностика</a>
+                    <a class="footer-list-a" href="#card">Ортодонтия</a>
+                    <a class="footer-list-a" href="#card">Расходные материалы</a>
+                    <a class="footer-list-a" href="#card">Оборудование</a>
                 </div>
             </div>
             </section>

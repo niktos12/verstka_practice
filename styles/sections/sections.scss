@@ -167,11 +167,14 @@ body{
             
             .card:nth-child(1){
                 background: #F98C23;
+                .card-btn{
+                    margin-top: 50px !important;
+                }
             }
             .card:nth-child(2){
                 background: #AE8EB5;
                 .card-ul{
-                    margin-top: -30px;
+                    // margin-top: -30px;
                     @include adaptiveCards{
                         margin-top: 0;
                     }
@@ -180,7 +183,7 @@ body{
             .card:nth-child(3){
                 background: #E74F4E;
                 .card-ul{
-                    margin-top: -150px;
+                    // margin-top: -150px;
                     @include cards{
                         margin-top: -110px;
                         @include adaptiveCards{
@@ -188,11 +191,14 @@ body{
                         }
                     }
                 }
+                .card-btn{
+                    margin-top: 130px;
+                }
             }
             .card:nth-child(4){
                 background: #91B450;
                 .card-ul{
-                    margin-top: -40px;
+                    // margin-top: -40px;
                     @include cards{
                         margin-top: 0;
                     }
@@ -212,29 +218,45 @@ body{
                 @include adaptiveCards{
                     display: none;
                 }
-                .card-ul{
-                    margin-top: -20px;
-                }
+                
             }
             .card:nth-child(7){
                 background: #8467CA;
                 @include adaptiveCards{
                     display: none;
                 }
-                .card-ul{
-                    margin-top: -5px;
-                }
+                
             }
             .card:nth-child(8){
                 background: #C39440;
                 @include adaptiveCards{
                     display: none;
                 }
+                .card-h2{
+                    font-size: 21px;
+                    margin-bottom: 0;
+                    color: #fff;
+                    margin-top: 0;
+                }
+                .card-btn{
+                    background: #0063B0;
+                    border-radius: 10px;
+                    padding: 13px 27px;
+                    align-items: center;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 400;
+                    transition: 1s ease;
+                    margin-top: auto;
+                }
             }
             
 
                 .card{
                     display: flex;
+                    height: 400px;
                     flex-direction: column;
                     align-items: flex-start;
                     gap: 20px;
@@ -242,7 +264,12 @@ body{
                     justify-content: space-between;
                     padding: 35px;
                     align-self: stretch;
-                    
+                    .front{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 20px;
+                        position:  relative !important;
                         .card-h2{
                         font-size: 21px;
                         margin-bottom: 0;
@@ -255,6 +282,8 @@ body{
                         gap: 15px;
                         list-style-image: url(../imgs/icon-list-cards.png);
                         margin-left: -25px;
+                        margin-top: 0;
+                        margin-bottom: 0;
                         .card-list{
                             font-size: 14px;
                             color: #fff;
@@ -276,13 +305,21 @@ body{
                         font-size: 14px;
                         font-weight: 400;
                         transition: 1s ease;
+                        margin-top: auto;
                     }
-                    // .back{
-                    //     display: none;
-                    // }
+                    
                     
                     
                 }
+                .back{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    position: absolute !important;
+                    max-width: 250px;
+                    margin-left: -5px;
+                }
+            }
             }
         
         .all-cards-btn:hover{

@@ -395,11 +395,11 @@ body .cards-section .cards {
 body .cards-section .cards .card:nth-child(1) {
   background: #F98C23;
 }
+body .cards-section .cards .card:nth-child(1) .card-btn {
+  margin-top: 50px !important;
+}
 body .cards-section .cards .card:nth-child(2) {
   background: #AE8EB5;
-}
-body .cards-section .cards .card:nth-child(2) .card-ul {
-  margin-top: -30px;
 }
 @media (max-width: 640px) {
   body .cards-section .cards .card:nth-child(2) .card-ul {
@@ -408,9 +408,6 @@ body .cards-section .cards .card:nth-child(2) .card-ul {
 }
 body .cards-section .cards .card:nth-child(3) {
   background: #E74F4E;
-}
-body .cards-section .cards .card:nth-child(3) .card-ul {
-  margin-top: -150px;
 }
 @media (max-width: 1325px) {
   body .cards-section .cards .card:nth-child(3) .card-ul {
@@ -422,11 +419,11 @@ body .cards-section .cards .card:nth-child(3) .card-ul {
     margin-top: 0;
   }
 }
+body .cards-section .cards .card:nth-child(3) .card-btn {
+  margin-top: 130px;
+}
 body .cards-section .cards .card:nth-child(4) {
   background: #91B450;
-}
-body .cards-section .cards .card:nth-child(4) .card-ul {
-  margin-top: -40px;
 }
 @media (max-width: 1325px) {
   body .cards-section .cards .card:nth-child(4) .card-ul {
@@ -452,9 +449,6 @@ body .cards-section .cards .card:nth-child(6) {
     display: none;
   }
 }
-body .cards-section .cards .card:nth-child(6) .card-ul {
-  margin-top: -20px;
-}
 body .cards-section .cards .card:nth-child(7) {
   background: #8467CA;
 }
@@ -462,9 +456,6 @@ body .cards-section .cards .card:nth-child(7) {
   body .cards-section .cards .card:nth-child(7) {
     display: none;
   }
-}
-body .cards-section .cards .card:nth-child(7) .card-ul {
-  margin-top: -5px;
 }
 body .cards-section .cards .card:nth-child(8) {
   background: #C39440;
@@ -474,39 +465,13 @@ body .cards-section .cards .card:nth-child(8) {
     display: none;
   }
 }
-body .cards-section .cards .card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  border-radius: 10px;
-  justify-content: space-between;
-  padding: 35px;
-  align-self: stretch;
-}
-body .cards-section .cards .card .card-h2 {
+body .cards-section .cards .card:nth-child(8) .card-h2 {
   font-size: 21px;
   margin-bottom: 0;
   color: #fff;
   margin-top: 0;
 }
-body .cards-section .cards .card .card-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  list-style-image: url(../imgs/icon-list-cards.png);
-  margin-left: -25px;
-}
-body .cards-section .cards .card .card-ul .card-list {
-  font-size: 14px;
-  color: #fff;
-  font-weight: 400;
-}
-body .cards-section .cards .card .card-btn:hover {
-  background: #333;
-  color: #fff;
-}
-body .cards-section .cards .card .card-btn {
+body .cards-section .cards .card:nth-child(8) .card-btn {
   background: #0063B0;
   border-radius: 10px;
   padding: 13px 27px;
@@ -517,6 +482,70 @@ body .cards-section .cards .card .card-btn {
   font-size: 14px;
   font-weight: 400;
   transition: 1s ease;
+  margin-top: auto;
+}
+body .cards-section .cards .card {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 10px;
+  justify-content: space-between;
+  padding: 35px;
+  align-self: stretch;
+}
+body .cards-section .cards .card .front {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative !important;
+}
+body .cards-section .cards .card .front .card-h2 {
+  font-size: 21px;
+  margin-bottom: 0;
+  color: #fff;
+  margin-top: 0;
+}
+body .cards-section .cards .card .front .card-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style-image: url(../imgs/icon-list-cards.png);
+  margin-left: -25px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body .cards-section .cards .card .front .card-ul .card-list {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+}
+body .cards-section .cards .card .front .card-btn:hover {
+  background: #333;
+  color: #fff;
+}
+body .cards-section .cards .card .front .card-btn {
+  background: #0063B0;
+  border-radius: 10px;
+  padding: 13px 27px;
+  align-items: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 1s ease;
+  margin-top: auto;
+}
+body .cards-section .cards .card .back {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute !important;
+  max-width: 250px;
+  margin-left: -5px;
 }
 body .cards-section .all-cards-btn:hover {
   background: #333;

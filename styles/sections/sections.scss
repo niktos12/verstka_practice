@@ -198,7 +198,6 @@ body{
             .card:nth-child(4){
                 background: #91B450;
                 .card-ul{
-                    // margin-top: -40px;
                     @include cards{
                         margin-top: 0;
                     }
